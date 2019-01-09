@@ -1,0 +1,21 @@
+package com.lemon.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.lemon.model.Customer;
+import com.lemon.repository.CustomerRepository;
+import com.lemon.repository.HibernateCustomerRepositoryImp;
+
+@Service("customerService")
+public class CustomerServiceImp implements CustomerService {
+
+	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImp();
+	
+	@Override
+	public List<Customer> findAll(){
+		return customerRepository.findAll();
+	}
+	
+}

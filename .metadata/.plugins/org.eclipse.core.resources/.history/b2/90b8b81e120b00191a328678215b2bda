@@ -1,0 +1,10 @@
+package com.lemon.service;
+
+import com.lemon.repository.CustomerRepository;
+import com.lemon.repository.HibernateCustomerRepositoryImp;
+
+public class CustomerServiceImp {
+
+	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImp();
+	
+}

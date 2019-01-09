@@ -1,0 +1,14 @@
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+
+	/**
+	 * @Configuration  at class level
+	 * @Bean at method level
+	 * */
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.lemon.service.CustomerService;
+import com.lemon.service.CustomerServiceImp;
+
+public class Application {
+
+	public static void main(String[] args) {
+		ApplicationContext appContext = 
+				new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		// create an instance of CustomerServiceImp
+		CustomerService service = appContext.getBean("customerServiceImp",CustomerService.class);
+		System.out.println(service.findAll().get(0).getFirstName());
+		
+		CustomerService service1 = appContext.getBean("customerServiceImp",CustomerService.class);
+		System.out.println(service);
+		System.out.println(service1);
+	}
+
+}

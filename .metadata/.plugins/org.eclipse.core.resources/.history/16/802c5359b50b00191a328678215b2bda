@@ -1,0 +1,15 @@
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+
+	/**
+	 * @Configuration  at class level
+	 * @Bean at method level
+	 * Define object here
+	 * */
+	public static void main(String[] args) {
+		
+	}
+
+}

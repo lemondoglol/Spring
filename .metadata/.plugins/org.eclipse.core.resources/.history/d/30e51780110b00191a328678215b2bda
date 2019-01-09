@@ -1,0 +1,5 @@
+package com.lemon.repository;
+
+public class HibernateCustomerRepositoryImp {
+
+}

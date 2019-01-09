@@ -1,0 +1,16 @@
+package com.lemon.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.lemon.model.Customer;
+
+public class HibernateCustomerRepositoryImp {
+
+	public List<Customer> findAll(){
+		List<Customer> customers = new ArrayList<>();
+		
+		return customers;
+	}
+	
+}
